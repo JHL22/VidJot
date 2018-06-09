@@ -45,7 +45,7 @@ router.post('/', (req, res) => {
   }
 
   if (errors.length > 0) {
-    res.render('/add', {
+    res.render('ideas/add', {
       errors: errors,
       title: req.body.title,
       details: req.body.details
